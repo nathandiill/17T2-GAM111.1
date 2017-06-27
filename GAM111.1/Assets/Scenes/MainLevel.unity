@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 24086848}
   - component: {fileID: 24086847}
   - component: {fileID: 24086846}
+  - component: {fileID: 24086849}
   m_Layer: 0
   m_Name: Level1P4.2
   m_TagString: Untagged
@@ -234,7 +235,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 043641428c858c54d80e462bd46281ff, type: 2}
+  - {fileID: 2100000, guid: 1558f41a08bdb5e45b2579c36ecb29bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -272,6 +273,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24086844}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &24086849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24086844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783b34399958b8e46ae00724d5ca3e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 125
+  rb: {fileID: 2049047318}
+  ForceDirection: {x: 0, y: 1, z: 0}
 --- !u!1 &48698951
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +462,7 @@ GameObject:
   - component: {fileID: 67910800}
   - component: {fileID: 67910799}
   - component: {fileID: 67910798}
+  - component: {fileID: 67910801}
   m_Layer: 0
   m_Name: Level1P2.1
   m_TagString: Untagged
@@ -480,7 +496,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 043641428c858c54d80e462bd46281ff, type: 2}
+  - {fileID: 2100000, guid: 1558f41a08bdb5e45b2579c36ecb29bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -518,6 +534,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 67910796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &67910801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67910796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783b34399958b8e46ae00724d5ca3e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 125
+  rb: {fileID: 2049047318}
+  ForceDirection: {x: 0, y: -1, z: 0}
 --- !u!1 &69203993
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +744,7 @@ GameObject:
   - component: {fileID: 116145920}
   - component: {fileID: 116145919}
   - component: {fileID: 116145918}
+  - component: {fileID: 116145922}
   m_Layer: 0
   m_Name: Level1P1
   m_TagString: Untagged
@@ -814,6 +845,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!114 &116145922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116145917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783b34399958b8e46ae00724d5ca3e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 0
+  rb: {fileID: 0}
+  ForceDirection: {x: 0, y: 0, z: 0}
 --- !u!1 &117791471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7327,6 +7372,7 @@ GameObject:
   - component: {fileID: 1980168086}
   - component: {fileID: 1980168085}
   - component: {fileID: 1980168084}
+  - component: {fileID: 1980168087}
   m_Layer: 0
   m_Name: Level1P6.1
   m_TagString: Untagged
@@ -7360,7 +7406,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 043641428c858c54d80e462bd46281ff, type: 2}
+  - {fileID: 2100000, guid: 1558f41a08bdb5e45b2579c36ecb29bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7398,6 +7444,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980168082}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1980168087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980168082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783b34399958b8e46ae00724d5ca3e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 125
+  rb: {fileID: 2049047318}
+  ForceDirection: {x: 0, y: -1, z: 0}
 --- !u!1 &1995653809
 GameObject:
   m_ObjectHideFlags: 0
@@ -7655,6 +7715,7 @@ GameObject:
   - component: {fileID: 2044162899}
   - component: {fileID: 2044162898}
   - component: {fileID: 2044162897}
+  - component: {fileID: 2044162900}
   m_Layer: 0
   m_Name: Level1P8.2
   m_TagString: Untagged
@@ -7688,7 +7749,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 043641428c858c54d80e462bd46281ff, type: 2}
+  - {fileID: 2100000, guid: 1558f41a08bdb5e45b2579c36ecb29bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7726,6 +7787,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2044162895}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2044162900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2044162895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783b34399958b8e46ae00724d5ca3e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 125
+  rb: {fileID: 2049047318}
+  ForceDirection: {x: 0, y: 1, z: 0}
 --- !u!1 &2049047316
 GameObject:
   m_ObjectHideFlags: 0
