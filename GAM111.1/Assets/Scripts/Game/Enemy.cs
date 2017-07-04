@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    public GameObject enemy;
+
 	void Start ()
     {
 		
@@ -13,4 +15,12 @@ public class Enemy : MonoBehaviour {
     {
 		
 	}
+
+    public void OnCollisionEnter(Collision col)
+    {
+        if(GameObject.FindGameObjectWithTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
