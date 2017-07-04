@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bounciness : MonoBehaviour {
 
-    public float thrust = 125;
+    public float thrust = 15;
     public Rigidbody rb;
     public Vector3 ForceDirection;
 

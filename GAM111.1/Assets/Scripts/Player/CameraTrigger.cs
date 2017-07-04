@@ -8,7 +8,7 @@ public class CameraTrigger : MonoBehaviour
 
     void Start()
     {
-
+       
     }
 
     void Update()
