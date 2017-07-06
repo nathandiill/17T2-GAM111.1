@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour {
     {
         if(GameObject.FindGameObjectWithTag("Player"))
         {
+            PointsSystem.Instance.points -= 100;
             Destroy(gameObject);
         }
     }

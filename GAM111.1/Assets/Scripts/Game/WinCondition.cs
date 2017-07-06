@@ -26,14 +26,6 @@ public class WinCondition : MonoBehaviour {
 
     public void OnTriggerEnter(Collider col)
     {
-        playerScore = newPlayerScore;
-
-        if (newPlayerScore > previousHighscore)
-        {
-            previousHighscore = newPlayerScore;
-            PlayerPrefs.SetFloat("High Score", previousHighscore);
-            Debug.Log("Working");
-        }
         SceneManager.LoadScene(5);
     }
 

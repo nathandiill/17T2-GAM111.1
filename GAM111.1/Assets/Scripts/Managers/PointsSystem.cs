@@ -16,6 +16,7 @@ public class PointsSystem : MonoBehaviour {
     public float points = 2000;
     public float pointReduction = 5;
     public float highScore;
+    public float newHighScore;
     public Text UIpoints;
 
     void Start ()
@@ -29,4 +30,13 @@ public class PointsSystem : MonoBehaviour {
 
         UIpoints.text = string.Format("Points: " + points);
 	}
+
+    public void OnDisable()
+    {
+        if (points > highScore)
+        {
+            points = newHighScore;
+            PlayerPrefs.SetFloat("High Score", newHighScore);
+        }
+    }
 }
