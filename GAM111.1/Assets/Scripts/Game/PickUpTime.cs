@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpPoints : MonoBehaviour {
+public class PickUpTime : MonoBehaviour {
 
     public GameObject pickUp;
 
@@ -16,9 +16,9 @@ public class PickUpPoints : MonoBehaviour {
 		
 	}
 
-    public void OnCollisionEnter (Collision other)
+    public void OnCollisionEnter(Collision other)
     {
-        PointsSystem.Instance.points += 50;
+        TimeManager.Instance.timeRemaining += 20;
 
         Destroy(gameObject);
     }
