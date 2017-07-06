@@ -12,6 +12,7 @@ public class CameraTrigger : MonoBehaviour
         {
             // If player hits trigger, switch camera modes on the enumerator
             Camera.main.GetComponent<SimpleCameraController>().cameraMode = modeToSetTo;
+            AudioManager.Instance.nextLevelAudio();
         }
     }
 }

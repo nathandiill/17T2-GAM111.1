@@ -10,6 +10,7 @@ public class PickUpTime : MonoBehaviour {
     {
         // Add time and destroy self
         TimeManager.Instance.timeRemaining += 20;
+        AudioManager.Instance.timePickUpAudio();
         Destroy(gameObject);
     }
 }

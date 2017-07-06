@@ -10,6 +10,7 @@ public class PickUpPoints : MonoBehaviour {
     {
         // Add points and destroy self
         PointsSystem.Instance.points += 50;
+        AudioManager.Instance.pointPickUpAudio();
         Destroy(gameObject);
     }
 }

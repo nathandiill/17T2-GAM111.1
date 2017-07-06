@@ -41,6 +41,7 @@ public class SimplePlayerController : MonoBehaviour {
             // Apply impulse force at given vector
             Vector3 Forcetoapply = transform.TransformDirection(ForceDirection);
             GetComponent<Rigidbody>().AddForce(Forcetoapply * thrust, ForceMode.Impulse);
+            AudioManager.Instance.playerJumpAudio();
         }
     }
 

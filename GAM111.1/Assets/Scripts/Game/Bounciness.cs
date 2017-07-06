@@ -18,6 +18,7 @@ public class Bounciness : MonoBehaviour {
         // Set the direction and apply impulse force
         Vector3 Forcetoapply = transform.TransformDirection(ForceDirection);
         col.rigidbody.AddForce(Forcetoapply * thrust, ForceMode.Impulse);
+        AudioManager.Instance.bounceWallAudio();
     }
 
     private void OnDrawGizmos()

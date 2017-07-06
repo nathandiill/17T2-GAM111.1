@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour {
         {
             PointsSystem.Instance.points -= 100;
             Instantiate(prefab, enemy.transform.position, Quaternion.identity);
+            AudioManager.Instance.enemyAudio();
             Destroy(gameObject);
         }
     }
