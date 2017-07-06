@@ -15,12 +15,14 @@ public class Bounciness : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
     {
+        // Set the direction and apply impulse force
         Vector3 Forcetoapply = transform.TransformDirection(ForceDirection);
         col.rigidbody.AddForce(Forcetoapply * thrust, ForceMode.Impulse);
     }
 
     private void OnDrawGizmos()
     {
+        // Draw gizmo for ease of use
         Vector3 Forcetoapply = transform.TransformDirection(ForceDirection);
         Gizmos.DrawRay(transform.position, Forcetoapply);
     }

@@ -6,20 +6,10 @@ public class PickUpPoints : MonoBehaviour {
 
     public GameObject pickUp;
 
-	void Start ()
-    {
-		
-	}
-	
-	void Update ()
-    {
-		
-	}
-
     public void OnCollisionEnter (Collision other)
     {
+        // Add points and destroy self
         PointsSystem.Instance.points += 50;
-
         Destroy(gameObject);
     }
 }

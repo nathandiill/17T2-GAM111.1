@@ -10,17 +10,13 @@ public class Health : MonoBehaviour {
     public int playerHealth = 100;
     public Text currentHealth;
 
-    void Start ()
-    {
-		
-	}
-	
-	void Update ()
+    void Update ()
     {
         currentHealth.text = string.Format("Health: " + playerHealth);
 
         if (playerHealth <=0)
         {
+            // If player loses all health, load the lose scene
             SceneManager.LoadScene(4);
         }
 	}
@@ -29,6 +25,7 @@ public class Health : MonoBehaviour {
     {
         if(col.gameObject.CompareTag("Enemy"))
         {
+            // If player impacts the enemy, lose health
             playerHealth -= 20;
         }
     }

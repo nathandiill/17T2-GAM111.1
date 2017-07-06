@@ -35,8 +35,10 @@ public class SimplePlayerController : MonoBehaviour {
 
         if(Input.GetKeyDown("space") && jumpCooldown <= 0)
         {
+            // Set the cooldown
             jumpCooldown = jumpInterval;
 
+            // Apply impulse force at given vector
             Vector3 Forcetoapply = transform.TransformDirection(ForceDirection);
             GetComponent<Rigidbody>().AddForce(Forcetoapply * thrust, ForceMode.Impulse);
         }
@@ -46,6 +48,7 @@ public class SimplePlayerController : MonoBehaviour {
     {
         if (jumpCooldown > 0)
         {
+            // If timer has been set, countdown the cooldown timer
             jumpCooldown -= Time.deltaTime;
         }
     }

@@ -18,16 +18,11 @@ public class PointsSystem : MonoBehaviour {
     public float highScore;
     public float newHighScore;
     public Text UIpoints;
-
-    void Start ()
-    {
-        
-    }
 	
 	void Update ()
     {
+        // Reduce player score over time and update UI
         points -= pointReduction * Time.deltaTime;
-
         UIpoints.text = string.Format("Points: " + points);
 	}
 
@@ -35,6 +30,7 @@ public class PointsSystem : MonoBehaviour {
     {
         if (points > highScore)
         {
+            // Upon disable, update the highscore
             points = newHighScore;
             PlayerPrefs.SetFloat("High Score", newHighScore);
         }

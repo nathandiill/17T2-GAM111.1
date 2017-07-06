@@ -7773,9 +7773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c429679093bea4b8728c40fc7281e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
-  previousHighscore: 0
-  newPlayerScore: 0
 --- !u!65 &1031209697
 BoxCollider:
   m_ObjectHideFlags: 0

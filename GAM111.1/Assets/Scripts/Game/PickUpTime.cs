@@ -6,20 +6,10 @@ public class PickUpTime : MonoBehaviour {
 
     public GameObject pickUp;
 
-	void Start ()
-    {
-		
-	}
-	
-	void Update ()
-    {
-		
-	}
-
     public void OnCollisionEnter(Collision other)
     {
+        // Add time and destroy self
         TimeManager.Instance.timeRemaining += 20;
-
         Destroy(gameObject);
     }
 }

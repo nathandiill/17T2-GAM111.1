@@ -13,23 +13,19 @@ public class TimeManager : MonoBehaviour {
         Instance = this;
     }
 
-    public float timeRemaining = 480;
+    public float timeRemaining = 540;
     public float timeUnitDecrease = 1;
     public Text time;
 
-	void Start ()
-    {
-		
-	}
-	
 	void Update ()
     {
+        // Countdown time and display UI
         timeRemaining -= timeUnitDecrease * Time.deltaTime;
-
         time.text = string.Format("Time Remaining: " + timeRemaining);
 
         if (timeRemaining <= 0)
         {
+            // If time runs out, load the lose scene
             SceneManager.LoadScene(4);
         }
     }

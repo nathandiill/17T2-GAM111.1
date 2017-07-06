@@ -6,14 +6,10 @@ using UnityEngine.UI;
 public class GetHighScore : MonoBehaviour {
 
     public Text highScore;
-
-	void Start ()
-    {
-		
-	}
 	
 	void Update ()
     {
+        // Retrieve and display highscore
         highScore.text = string.Format("High Score: " + PlayerPrefs.GetFloat("High Score"));
 	}
 }
