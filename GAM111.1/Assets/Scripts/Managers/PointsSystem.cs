@@ -15,6 +15,7 @@ public class PointsSystem : MonoBehaviour {
 
     public float points = 2000;
     public float pointReduction = 5;
+    public float highScore;
     public Text UIpoints;
 
     void Start ()
@@ -28,9 +29,4 @@ public class PointsSystem : MonoBehaviour {
 
         UIpoints.text = string.Format("Points: " + points);
 	}
-
-    public float pointCalculator (float currentPoints)
-    {
-        return points;
-    }
 }

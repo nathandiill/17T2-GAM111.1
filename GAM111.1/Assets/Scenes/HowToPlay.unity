@@ -312,6 +312,8 @@ MonoBehaviour:
 
     D - Move Right
 
+    Space - Jump (2 second cooldown)
+
 
     Pink cubes are enemies
 

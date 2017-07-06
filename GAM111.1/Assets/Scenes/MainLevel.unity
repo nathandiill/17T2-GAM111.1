@@ -1061,6 +1061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 5000
   pointReduction: 5
+  highScore: 0
   UIpoints: {fileID: 870461243}
 --- !u!114 &112160258
 MonoBehaviour:
@@ -7697,6 +7698,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c429679093bea4b8728c40fc7281e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScore: 0
+  previousHighscore: 0
+  newPlayerScore: 0
 --- !u!65 &1031209697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10012,6 +10016,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torqueScale: 300
   previousTorque: {x: 0, y: 0, z: 0}
+  ForceDirection: {x: 0, y: 1, z: 0}
+  thrust: 9
+  jumpCooldown: 0
+  jumpInterval: 2
 --- !u!54 &1389883155
 Rigidbody:
   m_ObjectHideFlags: 0
